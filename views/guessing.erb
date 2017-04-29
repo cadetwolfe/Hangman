@@ -1,0 +1,102 @@
+<div class="guesses_box">
+
+		<right><h2>Guesses - <%=array%> </h2></right>
+
+		<center><h2>Wrong guesses - <%=counter%></h2></center>
+
+		<%if blank.count("_") == 0%>
+
+		<center><h3><i><u>You Won!</u></i></h3></center>
+
+		<h4><a href="/winner">Go to Winner Page</a></h4>
+
+		<%end%>
+
+		<%if counter == 7%>
+
+		<h4><center><i><u>GAME OVER</u></i></center>
+
+		<a href="/loser">Click to Reveal The Word</a></h4>
+		<%end%>
+		<h1><%if counter == 1%>
+
+		<img alt="1.gif" src="http://www.retroforum.nl/galgje/1.gif" height="250" width="250"> 
+
+		<%elsif counter == 2%>
+
+		<img alt="2.gif" src="http://www.retroforum.nl/galgje/2.gif" height="250" width="250"> 
+
+		<%elsif counter == 3%>
+
+		<img alt="3.gif" src="http://www.retroforum.nl/galgje/3.gif" height="250" width="250"> 
+
+		<%elsif counter == 4%>
+
+		<img alt="4.gif" src="http://www.retroforum.nl/galgje/4.gif" height="250" width="250"> 
+
+		<%elsif counter == 5%>
+
+		<img alt="5.gif" src="http://www.retroforum.nl/galgje/5.gif" height="250" width="250"> 
+
+		<%elsif counter == 6%>
+
+		<img alt="6.gif" src="http://www.retroforum.nl/galgje/6.gif" height="250" width="250"> 
+
+		<%elsif counter == 7%>
+
+		<img alt="7.gif" src="http://www.retroforum.nl/galgje/7.gif" height="250" width="250">
+
+		<%end%>
+		<%if counter == 6%>
+		<h2><font color=white>This is Your final guess!</h2>
+		<%end%>
+
+	</div>
+	
+<div class="guessing_box">
+
+	<center><h2><%= p2_name%> Start guessing the letters. <h2></center>
+
+	<div class="blanks_box"><center><h1 class="blanks-font"><%=blank%></h1></center></div>
+
+	<center><h2> <%=message%> </h2></center>
+
+	<center><h2> <font color=white
+	><%=message2%> </h2></center>
+
+	</font>
+
+	<form method="post" action="guess">
+
+	<input type="letter" STYLE="color: rgba(138, 0, 2, 1); font-size: 17px; background-color: black; border: 2pt outset rgba(138, 0, 2, 1)" placeholder="Guess" size="2" maxlength="30" name="guess">
+
+	<input type="submit" style="font-size: middle; color: rgba(138, 0, 2, 1); background-color: black; border: 2pt outset rgba(138, 0, 2, 1)" value="Enter Guess"/> 
+
+</div>
+
+
+
+
+
+
+
+	
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</form>
