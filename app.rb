@@ -15,9 +15,9 @@ post '/player_names' do
 end	
 
 get '/singleplayer' do
-	session[:player1] = params[:player1]
-	session[:player2]= params[:player2]
-	 erb :singleplayer
+	session[:singleplayer] = params[:singleplayer]
+	
+	 erb :singleplayer, locals:{sp_name: session[:singleplayer], word: session[:game].correct_word.join(" "), array: session[:game].guessed.join(" "), message: "Pick a Letter", message2: "", counter: session[:game].counter}
 end	
 
 
