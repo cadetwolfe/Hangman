@@ -4,7 +4,7 @@ enable :sessions
 
 get '/' do
 	erb :index	
-end
+end 
 
 post '/player_names' do
 	session[:player1] = params[:player1]
@@ -13,6 +13,13 @@ post '/player_names' do
 
 	 redirect '/password'
 end	
+
+get '/singleplayer' do
+	session[:player1] = params[:player1]
+	session[:player2]= params[:player2]
+	 erb :singleplayer
+end	
+
 
 get '/password' do
 	
@@ -28,11 +35,6 @@ post '/gameword' do
 	
 	 
 	  redirect '/guessing' 
-end 	
-
-get '/singleplayer' do
-	
-	erb :singleplayer, locals:{p1_name: session[:player1], p2_name: session[:player2], blank: session[:game].correct_blank.join(" "), array: session[:game].guessed.join(" "), message: "Pick a Letter", message2: "", counter: session[:game].counter}
 end
 
 get '/guessing' do
