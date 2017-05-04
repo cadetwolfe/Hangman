@@ -1,6 +1,6 @@
 
 body {
-	background-image: url(http://wallpapercave.com/wp/PmR3ZQP.jpg);
+	background-image: url(http://eskipaper.com/images/skull-wallpaper-38.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	width: 100%;
@@ -12,24 +12,34 @@ body {
     width: 715px;
     height: 700px;
     float: center;
-    background: rgba(82, 246, 255, 1);
-    color: rgba(138, 0, 2, 1);
+    background: rgba(1, 0, 0, 0.6);
+   color: white;
+    text-shadow:
+    -1px -1px 0 black,
+    1px -1px 0 black,
+    -1px 1px 0 black,
+    1px 1px 0 black; 
     border-top: 3px solid black;
-    border-bottom: 3px solid rgba(138, 0, 2, 1);
-    border-left: 3px solid rgba(138, 0, 2, 1);
-    border-right: 3px solid rgba(138, 0, 2, 1);
+    border-bottom: 3px solid white;
+    border-left: 3px solid white;
+    border-right: 3px solid white;
 }
 .password_box
 {
     width: 715px;
     height: 700px;;
     float: center;
-    background: rgba(82, 246, 255, 1);
-    color: rgba(138, 0, 2, 1);
+    background: rgba(1, 0, 0, 0.6);
+    color: white;
+    text-shadow:
+    -1px -1px 0 black,
+    1px -1px 0 black,
+    -1px 1px 0 black,
+    1px 1px 0 black; 
     border-top: 3px solid black;
-    border-bottom: 3px solid rgba(138, 0, 2, 1);
-    border-left: 3px solid rgba(138, 0, 2, 1);
-    border-right: 3px solid rgba(138, 0, 2, 1);
+    border-bottom: 3px solid white;
+    border-left: 3px solid white;
+    border-right: 3px solid white;
 }
 
 .welcome_box
@@ -38,12 +48,17 @@ body {
     width: 715px;
     height: 10%;
     float: center;
-    background: rgba(82, 246, 255, 1);
-    color: rgba(168, 0, 2, 1);
-    border-top: 3px solid rgba(138, 0, 2, 1);
-    border-bottom: 3px solid rgba(138, 0, 2, 1);
-    border-left: 3px solid rgba(138, 0, 2, 1);
-    border-right: 3px solid rgba(138, 0, 2, 1);
+    background: rgba(1, 0, 0, 0.6);
+    color: white;
+    text-shadow:
+    -1px -1px 0 black,
+    1px -1px 0 black,
+    -1px 1px 0 black,
+    1px 1px 0 black;  
+   border-top: 3px solid white;
+    border-bottom: 3px solid white;
+    border-left: 3px solid white;
+    border-right: 3px solid white;
     /*border-radius: 20px / 20px ;*/
    
 }
@@ -52,20 +67,30 @@ body {
     width: 715px;
     height: 700px;
     float: center;
-    background: rgba(82, 246, 255, 1);
-    color: rgba(138, 0, 2, 1);
+    background: rgba(1, 0, 0, 0.6);
+    color: white;
+    text-shadow:
+    -1px -1px 0 black,
+    1px -1px 0 black,
+    -1px 1px 0 black,
+    1px 1px 0 black; 
     border-top: 3px solid black;
-    border-bottom: 3px solid rgba(138, 0, 2, 1);
-    border-left: 3px solid rgba(138, 0, 2, 1);
-    border-right: 3px solid rgba(138, 0, 2, 1);
+    border-bottom: 3px solid white;
+    border-left: 3px solid white;
+    border-right: 3px solid white;
 }
 .blanks_box
 {
     width: 715px;
     height: 65px;
     float: center;
-    background: rgba(82, 246, 255, 1);
-    color: black;
+    background: rgba(1, 0, 0, 0.6);
+   color: white;
+    text-shadow:
+    -1px -1px 0 black,
+    1px -1px 0 black,
+    -1px 1px 0 black,
+    1px 1px 0 black; 
     border-top: 3px solid black;
     border-bottom: 3px solid black;
     padding-bottom: 35px;
@@ -79,12 +104,17 @@ body {
     width: 300px;
     height: 700px;
     float: right; 
-    background: rgba(82, 246, 255, 1);
-    color: rgba(138, 0, 2, 1);
-    border-top: 3px solid rgba(138, 0, 2, 1);
-    border-bottom: 3px solid rgba(138, 0, 2, 1);
-    border-left: 3px solid rgba(138, 0, 2, 1);
-    border-right: 3px solid rgba(138, 0, 2, 1);
+    background: rgba(1, 0, 0, 0.6);
+   color: white;
+    text-shadow:
+    -1px -1px 0 black,
+    1px -1px 0 black,
+    -1px 1px 0 black,
+    1px 1px 0 black;  
+    border-top: 3px solid white;
+    border-bottom: 3px solid white;
+    border-left: 3px solid white;
+    border-right: 3px solid white;
     margin-right: 28px;
     /*border-radius: 20px / 20px ;*/
 }
@@ -94,12 +124,17 @@ body {
   	width: 715px;
     height: 700px;
     float: center;
-    background: rgba(82, 246, 255, 1);
-    color: rgba(138, 0, 2, 1);
+    background: rgba(1, 0, 0, 0.6);
+    color: white;
+    text-shadow:
+    -1px -1px 0 black,
+    1px -1px 0 black,
+    -1px 1px 0 black,
+    1px 1px 0 black;  
     border-top: 3px solid black;
-    border-bottom: 3px solid rgba(138, 0, 2, 1);
-    border-left: 3px solid rgba(138, 0, 2, 1);
-    border-right: 3px solid rgba(138, 0, 2, 1);
+    border-bottom: 3px solid white;
+    border-left: 3px solid white;
+    border-right: 3px solid white;
 }
 
 .loser_box
@@ -107,13 +142,19 @@ body {
     width: 715px;
     height: 700px;
     float: center;
-    background: rgba(82, 246, 255, 1);
-    color: rgba(138, 0, 2, 1);
+    background: rgba(1, 0, 0, 0.6);
+    color: white;
+    text-shadow:
+    -1px -1px 0 black,
+    1px -1px 0 black,
+    -1px 1px 0 black,
+    1px 1px 0 black; 
     border-top: 3px solid black;
-    border-bottom: 3px solid rgba(138, 0, 2, 1);
-    border-left: 3px solid rgba(138, 0, 2, 1);
-    border-right: 3px solid rgba(138, 0, 2, 1);
-}
+    border-bottom: 3px solid white;
+    border-left: 3px solid white;
+    border-right: 3px solid white;
+
+
 
 .h5_style{
 	font-size:1rem;
