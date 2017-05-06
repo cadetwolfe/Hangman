@@ -17,7 +17,7 @@ end
 get '/singleplayer' do
 	session[:singlep] = params[:singlep]
 	
-	 erb :singleplayer, locals:{singlep: session[:singlep]}
+	 erb :singleplayer, locals:{singlep: session[:singlep], blank: session[:game].correct_blank.join(" "), array: session[:game].guessed.join(" "), message: "Pick a Letter", message2: "", counter: session[:game].counter}
 end	
 
 
