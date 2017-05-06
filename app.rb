@@ -14,10 +14,16 @@ post '/player_names' do
 	 redirect '/password'
 end	
 
-get '/singleplayer' do
-	session[:singlep] = params[:singlep]
+post '/singleplayer' do
 	
-	 erb :singleplayer, locals:{singlep: session[:singlep], blank: session[:game].correct_blank.join(" "), array: session[:game].guessed.join(" "), message: "Pick a Letter", message2: "", counter: session[:game].counter}
+	gameword=File.readlines("dictionary.txt").map(&:chomp)
+
+	session[:singlep] = params[:singlep]
+
+	session[:game]=Hangman.new(gameword.sample)
+
+	 redirect '/guessing'
+
 end	
 
 
@@ -40,7 +46,7 @@ end
 get '/guessing' do
 
 	
-	erb :guessing, locals:{p1_name: session[:player1], p2_name: session[:player2], blank: session[:game].correct_blank.join(" "), array: session[:game].guessed.join(" "), message: "Pick a Letter", message2: "", counter: session[:game].counter}
+	erb :guessing, locals:{p1_name: session[:player1], p2_name: session[:player2], blank: session[:game].correct_blank.join(" "), array: session[:game].guessed.join(" "), message: "Pick a Letter", message2: "", counter: session[:game].counter, singlep: session[:singlep]}
 
 end
 
@@ -71,7 +77,7 @@ post '/guess' do
     		redirect '/guessing'
     	else
     		session[:game].correct_index(choice)
-    		erb :guessing, locals:{p1_name: session[:player1], p2_name: session[:player2], blank: session[:game].correct_blank.join(" "), array: session[:game].guessed.join(" "), message: "", message2: "Already Guessed", counter: session[:game].counter}
+    		erb :guessing, locals:{p1_name: session[:player1], p2_name: session[:player2], blank: session[:game].correct_blank.join(" "), array: session[:game].guessed.join(" "), message: "", message2: "Already Guessed", counter: session[:game].counter, singlep: session[:singlep]}
 			
 
     	end

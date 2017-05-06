@@ -1,5 +1,5 @@
 <div class="guesses_box">
-
+<font color=white>
 		<right><h2>Guesses - <%=array%> </h2></right>
 
 		<center><h2>Wrong guesses - <%=counter%></h2></center>
@@ -8,7 +8,13 @@
 
 		<center><h3><i><u>You Won!</u></i></h3></center>
 
-		<h4><a href="/winner">Go to Winner Page</a></h4>
+		<h4><a href="/winner" style="color: lightblue">Go to Winner Page</a></h4>
+
+		<%end%>
+
+		<%if counter == 6%>
+
+		<h2><font color=red>This is Your final guess!</h2>
 
 		<%end%>
 
@@ -16,7 +22,7 @@
 
 		<h4><center><i><u>GAME OVER</u></i></center>
 
-		<a href="/loser">Click to Reveal The Word</a></h4>
+		<a href="/loser" style="color: lightblue"> Click to Reveal The Word</font></a></h4>
 		<%end%>
 		<h1><%if counter == 1%>
 
@@ -47,10 +53,7 @@
 		<img alt="7.gif" src="http://www.retroforum.nl/galgje/7.gif" height="250" width="250">
 
 		<%end%>
-		<%if counter == 6%>
-		<h2><font color=darkred>This is Your final guess!</h2>
-		<%end%>
-
+		
 	</div>
 	
 <div class="guessing_box">
@@ -61,7 +64,7 @@
 
 	<center><h2> <%=message%> </h2></center>
 
-	<center><h2> <font color=darkred
+	<center><h2> <font color=red
 	><%=message2%> </h2></center>
 
 	</font>
@@ -83,7 +86,7 @@
 	
 
 	
-
+</font>
 
 
 
