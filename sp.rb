@@ -2,19 +2,19 @@ class Hangman
 	attr_accessor :name,:guessed,:correct_blank,:counter
 
 	def initialize(password_name)
-		@name = password_name.upcase
+		@words = ["california","hello","yellow"].upcase
 	    @guessed = []
 	    @correct_word = word()
 	    @wrong_guess = ()
 	    @counter = 0
-	    @guessword = california
+	    
 	end
 
 	
-	def correct_letter(letter)
-		guessword.inclue?(letter)
+	def spcorrect_letter(letter)
+		words.random.inclue?(letter)
 	end
-	def make_move(letter)
+	def spmake_move(letter)
 		if correct_letter?(letter)
 			correct_index(letter)
 		else
@@ -24,27 +24,27 @@ class Hangman
 
 
 
-	def charcount
-		guessword.length
+	def spcharcount
+		words.random.length
 	end
 	
-	def blank()
+	def spblank()
 		Array.new(charcount,"_")	 
 	end
 	
-	def correct_letter?(letter)
-		guessword.include?(letter)
+	def spcorrect_letter?(letter)
+		words.random.include?(letter)
 	end
-	def update_guessed(letter)
+	def spupdate_guessed(letter)
 		guessed.push(letter)
 	
 	end
-	def verified_guessed(letter)
+	def spverified_guessed(letter)
 	 guessed.include?(letter)
 		
 	end
-	def correct_index(guessletter)
-	    password=guessword.split ("")	  
+	def spcorrect_index(guessletter)
+	    password=words.random.split ("")	  
 		password.each_with_index do |letter,index_position|			
 			if letter == guessletter 
 				correct_blank[index_position] = guessletter
@@ -54,7 +54,7 @@ class Hangman
 	    end
 
 	end
-	def available_guess(choice)
+	def spavailable_guess(choice)
 		if  guessed.count(choice) == 0 
 			
 			true
@@ -67,11 +67,11 @@ class Hangman
 
 	end
 	
-	def loser
+	def sploser
 		counter == 7
 	end 
 
-	def winner
+	def spwinner
 	
 	 	 correct_word.count("_") == 0
 
