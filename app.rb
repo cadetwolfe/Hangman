@@ -15,16 +15,28 @@ post '/player_names' do
 end	
 
 post '/singleplayer' do
-	
-	gameword=File.readlines("dictionary.txt").map(&:chomp)
+	levels = params[:difficulty]
+	if levels == "Easy"
 
+		gameword=File.readlines("EasyWords.txt").map(&:chomp)
+
+	elsif levels == "Medium" 
+
+		gameword=File.readlines("MediumWords.txt").map(&:chomp)
+
+    else levels == "Hard"
+
+    	gameword=File.readlines("HardWords.txt").map(&:chomp)
+	
+	end
 	session[:singlep] = params[:singlep]
 
 	session[:game]=Hangman.new(gameword.sample)
-
+ 	
 	 redirect '/guessing'
 
 end	
+
 
 
 get '/password' do
