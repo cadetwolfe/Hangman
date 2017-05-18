@@ -2,3 +2,9 @@ cat
 dog
 car
 mat
+jump
+ride
+road
+cake
+fake
+chip
