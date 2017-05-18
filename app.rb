@@ -18,15 +18,15 @@ post '/singleplayer' do
 	levels = params[:difficulty]
 	if levels == "Easy"
 
-		gameword=File.readlines("EasyWords.txt").map(&:chomp)
+		gameword=File.readlines("easyWordsdic.txt").map(&:chomp)
 
 	elsif levels == "Medium" 
 
-		gameword=File.readlines("MediumWords.txt").map(&:chomp)
+		gameword=File.readlines("mediumWordsdic.txt").map(&:chomp)
 
     else levels == "Hard"
 
-    	gameword=File.readlines("HardWords.txt").map(&:chomp)
+    	gameword=File.readlines("hardWordsdic.txt").map(&:chomp)
 	
 	end
 	session[:singlep] = params[:singlep]
