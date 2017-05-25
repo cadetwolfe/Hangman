@@ -15,7 +15,7 @@ post '/player_names' do
 end	
 
 post '/singleplayer' do
-	session[:player1] = params[:player1]
+	session[:player2] = params[:player2]
 	levels = params[:difficulty]
 	if levels == "Easy"
 
